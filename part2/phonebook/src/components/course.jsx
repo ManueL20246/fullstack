@@ -3,7 +3,7 @@ import React from 'react'
 const Header = ({course}) => {
   return (
     <div>
-      <h2>{course}</h2>
+      <h3>{course}</h3>
     </div>
   )
 }
@@ -16,9 +16,7 @@ const Part = ({part}) => {
 }
 const Content = ({parts}) => {
   return (
-    <div>
-     {parts.map(part => <Part key={part.id} part={part} />)}
-    </div>
+    parts.map(part => <Part key={part.id} part={part} />)
   )
 }
 const Total = ({parts}) => {
